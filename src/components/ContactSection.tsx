@@ -58,7 +58,7 @@ const ContactSection = () => {
                   </div>
                   <div className="flex items-center gap-3 text-sm">
                     <GitBranch size={16} className="text-accent flex-shrink-0" />
-                    <span className="text-muted-foreground">github.com/alfdagos/qr-ticket-system</span>
+                    <span className="text-muted-foreground">github.com/alfdagos/CFLM_QRTicketSystem</span>
                   </div>
                 </div>
               </div>
