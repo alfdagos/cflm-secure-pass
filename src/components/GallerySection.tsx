@@ -6,10 +6,10 @@ import musicFestival from "@/assets/music-festival.jpg";
 import partyDrinks from "@/assets/party-drinks.jpg";
 
 const images = [
-  { src: partyHero, alt: "Festa notturna con cocktail colorati e DJ", span: "md:col-span-2" },
-  { src: cocktails, alt: "Cocktail eleganti al bancone del bar", span: "" },
-  { src: musicFestival, alt: "Festival musicale con folla e coriandoli fucsia", span: "" },
-  { src: partyDrinks, alt: "Amici brindano con drink colorati su un rooftop", span: "md:col-span-2" },
+  { src: partyHero, alt: "", span: "md:col-span-2" },
+  { src: cocktails, alt: "", span: "" },
+  { src: musicFestival, alt: "", span: "" },
+  { src: partyDrinks, alt: "", span: "md:col-span-2" },
 ];
 
 const ParallaxImage = ({ img, i }: { img: typeof images[0]; i: number }) => {
