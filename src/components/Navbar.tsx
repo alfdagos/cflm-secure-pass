@@ -18,7 +18,7 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-card/80 backdrop-blur-md border-b border-border">
       <div className="container mx-auto flex items-center justify-between h-16 px-4">
         <a href="#" className="font-heading font-bold text-lg text-primary tracking-tight">
-          CFLM QR Ticket
+          CFLM QR Ticket System
         </a>
         <div className="hidden md:flex items-center gap-6">
           {navLinks.map((l) => (
