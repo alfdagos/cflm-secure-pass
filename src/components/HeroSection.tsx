@@ -56,9 +56,11 @@ const HeroSection = () => {
               <Layers size={16} className="mr-2" />
               Scopri l'architettura
             </Button>
-            <Button size="lg" variant="ghost" className="text-primary-foreground/70 hover:text-primary-foreground hover:bg-primary-foreground/10">
-              <GitBranch size={16} className="mr-2" />
-              Accedi al repository
+            <Button size="lg" variant="ghost" className="text-primary-foreground/70 hover:text-primary-foreground hover:bg-primary-foreground/10" asChild>
+              <a href="https://github.com/alfdagos/CFLM_QRTicketSystem" target="_blank" rel="noopener noreferrer">
+                <GitBranch size={16} className="mr-2" />
+                Accedi al repository
+              </a>
             </Button>
           </motion.div>
         </div>
