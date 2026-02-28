@@ -54,11 +54,11 @@ const ContactSection = () => {
                 <div className="space-y-3">
                   <div className="flex items-center gap-3 text-sm">
                     <Mail size={16} className="text-accent flex-shrink-0" />
-                    <span className="text-muted-foreground">info@cflm-qrticket.org</span>
+                    <span className="text-muted-foreground">info@cflm.it</span>
                   </div>
                   <div className="flex items-center gap-3 text-sm">
                     <GitBranch size={16} className="text-accent flex-shrink-0" />
-                    <span className="text-muted-foreground">github.com/cflm/qr-ticket-system</span>
+                    <span className="text-muted-foreground">github.com/alfdagos/qr-ticket-system</span>
                   </div>
                 </div>
               </div>
@@ -66,7 +66,7 @@ const ContactSection = () => {
               <div className="bg-card border border-border rounded-lg p-6 card-shadow">
                 <h3 className="font-heading font-semibold text-foreground mb-3">Progetto CFLM</h3>
                 <p className="text-sm text-muted-foreground leading-relaxed">
-                  Il Circolo Filarmonico L. Masi promuove la cultura musicale e artistica 
+                  Il Comitato promuove il gasamento musicale e artistico 
                   sul territorio, abbracciando l'innovazione digitale per migliorare 
                   l'esperienza dei propri eventi.
                 </p>
