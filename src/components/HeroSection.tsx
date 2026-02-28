@@ -1,15 +1,22 @@
-import { motion } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 import { ArrowRight, GitBranch, Layers } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useRef } from "react";
+import partyHero from "@/assets/party-hero.jpg";
 
 const HeroSection = () => {
+  const ref = useRef<HTMLElement>(null);
+  const { scrollYProgress } = useScroll({ target: ref, offset: ["start start", "end start"] });
+  const bgY = useTransform(scrollYProgress, [0, 1], ["0%", "30%"]);
+
   return (
-    <section className="relative min-h-screen flex items-center hero-gradient qr-pattern overflow-hidden pt-16">
-      {/* Subtle geometric decoration */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-20 right-10 w-64 h-64 border border-primary-foreground/10 rounded-lg rotate-12" />
-        <div className="absolute bottom-20 left-10 w-48 h-48 border border-primary-foreground/5 rounded-lg -rotate-6" />
-      </div>
+    <section ref={ref} className="relative min-h-screen flex items-center overflow-hidden pt-16">
+      {/* Background image with parallax */}
+      <motion.div className="absolute inset-0 -top-10 -bottom-10" style={{ y: bgY }}>
+        <img src={partyHero} alt="" className="w-full h-full object-cover" />
+        <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/80 to-background/50" />
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-background/60" />
+      </motion.div>
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-3xl">
