@@ -8,7 +8,7 @@ const Footer = () => {
               CFLM QR Ticket System
             </p>
             <p className="text-xs text-primary-foreground/60 mt-1">
-              © {new Date().getFullYear()} Circolo Filarmonico L. Masi — Progetto Open Source
+              © {new Date().getFullYear()} CFLM — Progetto Open Source
             </p>
           </div>
           <div className="flex gap-6">
